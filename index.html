@@ -147,7 +147,7 @@
         map.getPane('pane_WorldImagery_2').style.zIndex = 402;
         var layer_WorldImagery_2 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
             pane: 'pane_WorldImagery_2',
-            opacity: 1.0,
+            opacity: 0.985,
             attribution: '',
             minZoom: 12,
             maxZoom: 20,
@@ -225,6 +225,9 @@
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['PATH_PHOTO_2'] !== null ? autolinker.link(String(feature.properties['PATH_PHOTO_2']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PATH_PHOTO_3'] !== null ? autolinker.link(String(feature.properties['PATH_PHOTO_3']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -313,6 +316,10 @@
                     <tr>\
                         <th scope="row">Photo 2</th>\
                         <td>' + (feature.properties['PATH_PHOTO_2'] !== null ? '<img src="images/' + String(feature.properties['PATH_PHOTO_2']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">Photo 3</th>\
+                        <td>' + (feature.properties['PATH_PHOTO_3'] !== null ? '<img src="images/' + String(feature.properties['PATH_PHOTO_3']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
