@@ -90,16 +90,6 @@
 				popup._contentNode.classList.remove('media');
 			}
 		}
-        var title = new L.Control({'position':'bottomleft'});
-        title.onAdd = function (map) {
-            this._div = L.DomUtil.create('div', 'info');
-            this.update();
-            return this._div;
-        };
-        title.update = function () {
-            this._div.innerHTML = '<h2>Four Mile Tree Inventory</h2>';
-        };
-        title.addTo(map);
         var zoomControl = L.control.zoom({
             position: 'topleft'
         }).addTo(map);
@@ -199,7 +189,7 @@
                     </tr>\
                     <tr>\
                         <th scope="row">Photo 3</th>\
-                        <td>' + (feature.properties['PATH_PHOTO_3'] !== null ? autolinker.link(String(feature.properties['PATH_PHOTO_3']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['PATH_PHOTO_3'] !== null ? '<img src="images/' + String(feature.properties['PATH_PHOTO_3']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
