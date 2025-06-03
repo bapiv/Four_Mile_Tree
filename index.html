@@ -39,7 +39,7 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
         <script src="js/leaflet-search.js"></script>
-        <script src="data/ItemsFoundbyzone_7.js"></script>
+        <script src="data/ItemsFoundbyzone_3.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -143,43 +143,7 @@
         });
         layer_WorldImagery_2;
         map.addLayer(layer_WorldImagery_2);
-        map.createPane('pane_Aerial042021_3');
-        map.getPane('pane_Aerial042021_3').style.zIndex = 403;
-        var img_Aerial042021_3 = 'data/Aerial042021_3.png';
-        var img_bounds_Aerial042021_3 = [[37.196958456630334,-76.85320539395444],[37.200430412495585,-76.84977196745777]];
-        var layer_Aerial042021_3 = new L.imageOverlay(img_Aerial042021_3,
-                                              img_bounds_Aerial042021_3,
-                                              {pane: 'pane_Aerial042021_3'});
-        bounds_group.addLayer(layer_Aerial042021_3);
-        map.addLayer(layer_Aerial042021_3);
-        map.createPane('pane_Aerial032021_4');
-        map.getPane('pane_Aerial032021_4').style.zIndex = 404;
-        var img_Aerial032021_4 = 'data/Aerial032021_4.png';
-        var img_bounds_Aerial032021_4 = [[37.19933126786336,-76.85530542435552],[37.20317820405431,-76.8530931367883]];
-        var layer_Aerial032021_4 = new L.imageOverlay(img_Aerial032021_4,
-                                              img_bounds_Aerial032021_4,
-                                              {pane: 'pane_Aerial032021_4'});
-        bounds_group.addLayer(layer_Aerial032021_4);
-        map.addLayer(layer_Aerial032021_4);
-        map.createPane('pane_Aerial022021_5');
-        map.getPane('pane_Aerial022021_5').style.zIndex = 405;
-        var img_Aerial022021_5 = 'data/Aerial022021_5.png';
-        var img_bounds_Aerial022021_5 = [[37.205184464864175,-76.85892503346923],[37.206111252120515,-76.85616514996951]];
-        var layer_Aerial022021_5 = new L.imageOverlay(img_Aerial022021_5,
-                                              img_bounds_Aerial022021_5,
-                                              {pane: 'pane_Aerial022021_5'});
-        bounds_group.addLayer(layer_Aerial022021_5);
-        map.addLayer(layer_Aerial022021_5);
-        map.createPane('pane_Aerial012021_6');
-        map.getPane('pane_Aerial012021_6').style.zIndex = 406;
-        var img_Aerial012021_6 = 'data/Aerial012021_6.png';
-        var img_bounds_Aerial012021_6 = [[37.20309969711226,-76.85626097925771],[37.208394371229026,-76.85118202698392]];
-        var layer_Aerial012021_6 = new L.imageOverlay(img_Aerial012021_6,
-                                              img_bounds_Aerial012021_6,
-                                              {pane: 'pane_Aerial012021_6'});
-        bounds_group.addLayer(layer_Aerial012021_6);
-        map.addLayer(layer_Aerial012021_6);
-        function pop_ItemsFoundbyzone_7(feature, layer) {
+        function pop_ItemsFoundbyzone_3(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -235,11 +199,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_ItemsFoundbyzone_7_0(feature) {
+        function style_ItemsFoundbyzone_3_0(feature) {
             switch(String(feature.properties['ZONE'])) {
                 case 'A':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -255,7 +219,7 @@
                     break;
                 case 'B':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -271,7 +235,7 @@
                     break;
                 case 'C':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -287,7 +251,7 @@
                     break;
                 case 'D':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -303,7 +267,7 @@
                     break;
                 case 'E':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -319,7 +283,7 @@
                     break;
                 case 'F':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -335,7 +299,7 @@
                     break;
                 case 'G':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -351,7 +315,7 @@
                     break;
                 case 'SQ':
                     return {
-                pane: 'pane_ItemsFoundbyzone_7',
+                pane: 'pane_ItemsFoundbyzone_3',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
@@ -367,32 +331,28 @@
                     break;
             }
         }
-        map.createPane('pane_ItemsFoundbyzone_7');
-        map.getPane('pane_ItemsFoundbyzone_7').style.zIndex = 407;
-        map.getPane('pane_ItemsFoundbyzone_7').style['mix-blend-mode'] = 'normal';
-        var layer_ItemsFoundbyzone_7 = new L.geoJson(json_ItemsFoundbyzone_7, {
+        map.createPane('pane_ItemsFoundbyzone_3');
+        map.getPane('pane_ItemsFoundbyzone_3').style.zIndex = 403;
+        map.getPane('pane_ItemsFoundbyzone_3').style['mix-blend-mode'] = 'normal';
+        var layer_ItemsFoundbyzone_3 = new L.geoJson(json_ItemsFoundbyzone_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_ItemsFoundbyzone_7',
-            layerName: 'layer_ItemsFoundbyzone_7',
-            pane: 'pane_ItemsFoundbyzone_7',
-            onEachFeature: pop_ItemsFoundbyzone_7,
+            dataVar: 'json_ItemsFoundbyzone_3',
+            layerName: 'layer_ItemsFoundbyzone_3',
+            pane: 'pane_ItemsFoundbyzone_3',
+            onEachFeature: pop_ItemsFoundbyzone_3,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_ItemsFoundbyzone_7_0(feature));
+                return L.circleMarker(latlng, style_ItemsFoundbyzone_3_0(feature));
             },
         });
-        bounds_group.addLayer(layer_ItemsFoundbyzone_7);
-        map.addLayer(layer_ItemsFoundbyzone_7);
+        bounds_group.addLayer(layer_ItemsFoundbyzone_3);
+        map.addLayer(layer_ItemsFoundbyzone_3);
         var overlaysTree = [
-            {label: 'Items Found (by zone)<br /><table><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_A0.png" /></td><td>A</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_B1.png" /></td><td>B</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_C2.png" /></td><td>C</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_D3.png" /></td><td>D</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_E4.png" /></td><td>E</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_F5.png" /></td><td>F</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_G6.png" /></td><td>G</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_7_SQ7.png" /></td><td>SQ</td></tr></table>', layer: layer_ItemsFoundbyzone_7},
-            {label: "Aerial 01 - 2021", layer: layer_Aerial012021_6},
-            {label: "Aerial 02 -2021", layer: layer_Aerial022021_5},
-            {label: "Aerial 03 - 2021", layer: layer_Aerial032021_4},
-            {label: "Aerial 04 - 2021", layer: layer_Aerial042021_3},
+            {label: 'Items Found (by zone)<br /><table><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_A0.png" /></td><td>A</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_B1.png" /></td><td>B</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_C2.png" /></td><td>C</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_D3.png" /></td><td>D</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_E4.png" /></td><td>E</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_F5.png" /></td><td>F</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_G6.png" /></td><td>G</td></tr><tr><td style="text-align: center;"><img src="legend/ItemsFoundbyzone_3_SQ7.png" /></td><td>SQ</td></tr></table>', layer: layer_ItemsFoundbyzone_3},
             {label: "World Imagery", layer: layer_WorldImagery_2, radioGroup: 'bm' },
             {label: "Google Terrain Hybrid", layer: layer_GoogleTerrainHybrid_1, radioGroup: 'bm' },
             {label: "OpenStreetMap", layer: layer_OpenStreetMap_0, radioGroup: 'bm' },]
@@ -458,12 +418,12 @@
         });       
         setBounds();
         var i = 0;
-        layer_ItemsFoundbyzone_7.eachLayer(function(layer) {
+        layer_ItemsFoundbyzone_3.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['ITEM_ID'] !== null?String('<div style="color: #ffffff; font-size: 12pt; font-weight: bold; font-family: \'Calibri\', sans-serif;">' + layer.feature.properties['ITEM_ID']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_ItemsFoundbyzone_7'});
+            layer.bindTooltip((layer.feature.properties['ITEM_ID'] !== null?String('<div style="color: #ffffff; font-size: 12pt; font-weight: bold; font-family: \'Calibri\', sans-serif;">' + layer.feature.properties['ITEM_ID']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_ItemsFoundbyzone_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -471,26 +431,21 @@
               i++;
         });
         map.addControl(new L.Control.Search({
-            layer: layer_ItemsFoundbyzone_7,
+            layer: layer_ItemsFoundbyzone_3,
             initial: false,
             hideMarkerOnCollapse: true,
             propertyName: 'ITEM_ID'}));
         document.getElementsByClassName('search-button')[0].className +=
          ' fa fa-binoculars';
-        L.ImageOverlay.include({
-            getBounds: function () {
-                return this._bounds;
-            }
-        });
-        resetLabels([layer_ItemsFoundbyzone_7]);
+        resetLabels([layer_ItemsFoundbyzone_3]);
         map.on("zoomend", function(){
-            resetLabels([layer_ItemsFoundbyzone_7]);
+            resetLabels([layer_ItemsFoundbyzone_3]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_ItemsFoundbyzone_7]);
+            resetLabels([layer_ItemsFoundbyzone_3]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_ItemsFoundbyzone_7]);
+            resetLabels([layer_ItemsFoundbyzone_3]);
         });
         </script>
     </body>
